@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		28718291266B96A400569A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28718290266B96A400569A74 /* AppDelegate.swift */; };
 		28718293266B96A400569A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28718292266B96A400569A74 /* SceneDelegate.swift */; };
-		28718295266B96A400569A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28718294266B96A400569A74 /* ViewController.swift */; };
-		28718298266B96A400569A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28718296266B96A400569A74 /* Main.storyboard */; };
+		28718295266B96A400569A74 /* URLCacheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28718294266B96A400569A74 /* URLCacheVC.swift */; };
 		2871829A266B96A800569A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28718299266B96A800569A74 /* Assets.xcassets */; };
 		2871829D266B96A800569A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2871829B266B96A800569A74 /* LaunchScreen.storyboard */; };
+		287182A7266B98BF00569A74 /* ElegantAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 287182A6266B98BF00569A74 /* ElegantAPI */; };
+		287182A9266B98D000569A74 /* TMDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287182A8266B98D000569A74 /* TMDBAPI.swift */; };
+		287182AB266B98F200569A74 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287182AA266B98F200569A74 /* Cache.swift */; };
+		287182AD266BA11B00569A74 /* URLCachePrefrencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287182AC266BA11B00569A74 /* URLCachePrefrencesVC.swift */; };
+		287182AF266BA44100569A74 /* UISwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287182AE266BA44100569A74 /* UISwitchCell.swift */; };
+		28817205266BFFB7008C915C /* PaginatedTrendingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28817204266BFFB7008C915C /* PaginatedTrendingResponse.swift */; };
+		28C80122266CF5750022A05F /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C80121266CF5750022A05F /* ResultCell.swift */; };
+		28C8CA46266BAB6F0005C719 /* UISegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CA45266BAB6F0005C719 /* UISegmentedControlCell.swift */; };
+		28C8CA48266BD2760005C719 /* URLRequest.CachePolicy+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CA47266BD2760005C719 /* URLRequest.CachePolicy+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2871828D266B96A400569A74 /* WhatToWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28718290266B96A400569A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28718292266B96A400569A74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28718294266B96A400569A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28718297266B96A400569A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28718294266B96A400569A74 /* URLCacheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCacheVC.swift; sourceTree = "<group>"; };
 		28718299266B96A800569A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2871829C266B96A800569A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2871829E266B96A800569A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287182A4266B96B200569A74 /* WhatToWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatToWatch.entitlements; sourceTree = "<group>"; };
+		287182A8266B98D000569A74 /* TMDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPI.swift; sourceTree = "<group>"; };
+		287182AA266B98F200569A74 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		287182AC266BA11B00569A74 /* URLCachePrefrencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCachePrefrencesVC.swift; sourceTree = "<group>"; };
+		287182AE266BA44100569A74 /* UISwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchCell.swift; sourceTree = "<group>"; };
+		28817204266BFFB7008C915C /* PaginatedTrendingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedTrendingResponse.swift; sourceTree = "<group>"; };
+		28C80121266CF5750022A05F /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		28C8CA45266BAB6F0005C719 /* UISegmentedControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlCell.swift; sourceTree = "<group>"; };
+		28C8CA47266BD2760005C719 /* URLRequest.CachePolicy+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest.CachePolicy+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287182A7266B98BF00569A74 /* ElegantAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +73,21 @@
 		2871828F266B96A400569A74 /* WhatToWatch */ = {
 			isa = PBXGroup;
 			children = (
+				287182A4266B96B200569A74 /* WhatToWatch.entitlements */,
 				28718290266B96A400569A74 /* AppDelegate.swift */,
 				28718292266B96A400569A74 /* SceneDelegate.swift */,
-				28718294266B96A400569A74 /* ViewController.swift */,
-				28718296266B96A400569A74 /* Main.storyboard */,
+				28718294266B96A400569A74 /* URLCacheVC.swift */,
 				28718299266B96A800569A74 /* Assets.xcassets */,
 				2871829B266B96A800569A74 /* LaunchScreen.storyboard */,
 				2871829E266B96A800569A74 /* Info.plist */,
+				287182A8266B98D000569A74 /* TMDBAPI.swift */,
+				287182AA266B98F200569A74 /* Cache.swift */,
+				287182AC266BA11B00569A74 /* URLCachePrefrencesVC.swift */,
+				287182AE266BA44100569A74 /* UISwitchCell.swift */,
+				28C8CA45266BAB6F0005C719 /* UISegmentedControlCell.swift */,
+				28C8CA47266BD2760005C719 /* URLRequest.CachePolicy+.swift */,
+				28817204266BFFB7008C915C /* PaginatedTrendingResponse.swift */,
+				28C80121266CF5750022A05F /* ResultCell.swift */,
 			);
 			path = WhatToWatch;
 			sourceTree = "<group>";
@@ -83,6 +108,9 @@
 			dependencies = (
 			);
 			name = WhatToWatch;
+			packageProductDependencies = (
+				287182A6266B98BF00569A74 /* ElegantAPI */,
+			);
 			productName = WhatToWatch;
 			productReference = 2871828D266B96A400569A74 /* WhatToWatch.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 28718284266B96A400569A74;
+			packageReferences = (
+				287182A5266B98BF00569A74 /* XCRemoteSwiftPackageReference "ElegantAPI" */,
+			);
 			productRefGroup = 2871828E266B96A400569A74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +157,6 @@
 			files = (
 				2871829D266B96A800569A74 /* LaunchScreen.storyboard in Resources */,
 				2871829A266B96A800569A74 /* Assets.xcassets in Resources */,
-				28718298266B96A400569A74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +167,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28718295266B96A400569A74 /* ViewController.swift in Sources */,
+				28C8CA48266BD2760005C719 /* URLRequest.CachePolicy+.swift in Sources */,
+				28718295266B96A400569A74 /* URLCacheVC.swift in Sources */,
+				287182AB266B98F200569A74 /* Cache.swift in Sources */,
+				28C8CA46266BAB6F0005C719 /* UISegmentedControlCell.swift in Sources */,
+				28C80122266CF5750022A05F /* ResultCell.swift in Sources */,
+				287182AD266BA11B00569A74 /* URLCachePrefrencesVC.swift in Sources */,
+				28817205266BFFB7008C915C /* PaginatedTrendingResponse.swift in Sources */,
+				287182A9266B98D000569A74 /* TMDBAPI.swift in Sources */,
 				28718291266B96A400569A74 /* AppDelegate.swift in Sources */,
 				28718293266B96A400569A74 /* SceneDelegate.swift in Sources */,
+				287182AF266BA44100569A74 /* UISwitchCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28718296266B96A400569A74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28718297266B96A400569A74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2871829B266B96A800569A74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,17 +316,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WhatToWatch/WhatToWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWJALMT777;
 				INFOPLIST_FILE = WhatToWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = amitsamant.in.WhatToWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -305,17 +338,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WhatToWatch/WhatToWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWJALMT777;
 				INFOPLIST_FILE = WhatToWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = amitsamant.in.WhatToWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
@@ -341,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		287182A5266B98BF00569A74 /* XCRemoteSwiftPackageReference "ElegantAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DominatorVbN/ElegantAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		287182A6266B98BF00569A74 /* ElegantAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287182A5266B98BF00569A74 /* XCRemoteSwiftPackageReference "ElegantAPI" */;
+			productName = ElegantAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28718285266B96A400569A74 /* Project object */;
 }
