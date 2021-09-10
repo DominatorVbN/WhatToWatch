@@ -1,55 +1,23 @@
 //
-//  TMDBAPI.swift
+//  TMDBProvider.swift
 //  WhatToWatch
 //
-//  Created by Amit Samant on 05/06/21.
+//  Created by Amit Samant on 04/09/21.
 //
-
-import Foundation
 
 import Foundation
 import ElegantAPI
-import Combine
-
-import UIKit
-
-extension UIImageView {
-    func setImage(_ url: URL?, cacheType: Provider<TMDBAPI>.CacheType = .URLCache()) {
-        guard let url = url else {
-            return
-        }
-        TMDBAPI.provider.loadImage(url: url, cacheType: cacheType) {  image in
-            DispatchQueue.main.async {
-                self.image = image
-                self.superview?.layoutIfNeeded()
-            }
-        }
-    }
-}
-
+import UIKit.UIImage
 
 class Provider<Endpoint: API> {
     
-    var imageCache: Cache<URL,Data> = Cache<URL,Data>.init()
-
-    lazy var cache: URLCache = {
-        let cachesURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
-        let diskCacheURL = cachesURL.appendingPathComponent(String(describing: Self.self) + " Cache")
-        let cache: URLCache
-        if #available(iOS 13.0, *) {
-             cache = URLCache(memoryCapacity: 100_000_000, diskCapacity: 1_000_000_000, directory: diskCacheURL)
-        } else {
-            cache = URLCache(memoryCapacity: 100_000_000, diskCapacity: 1_000_000_000, diskPath: diskCacheURL.path)
-        }
-        return cache
-    }()
-    
-    lazy var diskBasedCacheConfiguration: URLSessionConfiguration = {
+    private lazy var imageCache: Cache<URL,Data> = Cache<URL,Data>.init()
+    private lazy var cache: URLCache = createURLCache()
+    private lazy var diskBasedCacheConfiguration: URLSessionConfiguration = {
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.urlCache = cache
         return sessionConfiguration
     }()
-    
     
     enum RequestError: Error {
         case unableToCreate
@@ -82,7 +50,60 @@ class Provider<Endpoint: API> {
         }
     }
     
-    private func fetchFromNSCache<T: Decodable>(
+    func loadImage(
+        url: URL,
+        cacheType: CacheType = .URLCache(),
+        completion: @escaping (UIImage) -> Void
+    ) {
+        switch cacheType {
+        case .NSCache(let useDiskBasedCache):
+            loadImageUsingNSCache(
+                url: url,
+                useDiskBasedCache: useDiskBasedCache,
+                completion: completion
+            )
+        case let .URLCache(useDiskBasedCache, cachePolicy):
+            loadImageUsingURLCache(
+                url: url,
+                useDiskBasedCache: useDiskBasedCache,
+                cachePolicy: cachePolicy,
+                completion: completion
+            )
+        }
+    }
+}
+
+private extension Provider where Endpoint: API {
+    
+    func createURLCache() -> URLCache {
+        
+        let cachesURL = FileManager.default.urls(
+            for: .cachesDirectory,
+               in: .userDomainMask
+        )[0]
+        
+        let diskCacheURL = cachesURL.appendingPathComponent(
+            String(describing: Self.self) + " Cache"
+        )
+        
+        let cache: URLCache
+        if #available(iOS 13.0, *) {
+             cache = URLCache(
+                memoryCapacity: 100_000_000,
+                diskCapacity: 1_000_000_000,
+                directory: diskCacheURL
+             )
+        } else {
+            cache = URLCache(
+                memoryCapacity: 100_000_000,
+                diskCapacity: 1_000_000_000,
+                diskPath: diskCacheURL.path
+            )
+        }
+        return cache
+    }
+    
+    func fetchFromNSCache<T: Decodable>(
         api: Endpoint,
         useDiskBasedCache: Bool = false,
         completion: @escaping (Result<T, Error>) -> Void
@@ -94,9 +115,7 @@ class Provider<Endpoint: API> {
         perform(request: request, completion: completion)
     }
     
-    
-        
-    private func fetch<T: Decodable>(
+    func fetch<T: Decodable>(
         api: Endpoint,
         useDiskBasedCache: Bool = false,
         cachePolicy: URLRequest.CachePolicy = . useProtocolCachePolicy,
@@ -141,29 +160,7 @@ class Provider<Endpoint: API> {
         }.resume()
     }
     
-    func loadImage(
-        url: URL,
-        cacheType: CacheType = .URLCache(),
-        completion: @escaping (UIImage) -> Void
-    ) {
-        switch cacheType {
-        case .NSCache(let useDiskBasedCache):
-            loadImageUsingNSCache(
-                url: url,
-                useDiskBasedCache: useDiskBasedCache,
-                completion: completion
-            )
-        case let .URLCache(useDiskBasedCache, cachePolicy):
-            loadImageUsingURLCache(
-                url: url,
-                useDiskBasedCache: useDiskBasedCache,
-                cachePolicy: cachePolicy,
-                completion: completion
-            )
-        }
-    }
-    
-    private func loadImageUsingNSCache(
+    func loadImageUsingNSCache(
         url: URL,
         useDiskBasedCache: Bool = false,
         completion: @escaping (UIImage) -> Void
@@ -219,53 +216,5 @@ class Provider<Endpoint: API> {
             completion(image)
         }.resume()
     }
-}
 
-
-
-enum TMDBAPI {
-    static let provider = Provider<Self>()
-    static let apiKey = "d6bc218c10cb73c14b35b5a648f929ed"
-    case trending
-}
-
-extension TMDBAPI: API {
-    var baseURL: URL {
-        URL(string: "https://api.themoviedb.org/3")!
-    }
-    
-    var path: String {
-        switch self {
-        case .trending:
-            return "trending/all/day"
-        }
-    }
-    
-    var method: ElegantAPI.Method {
-        switch self {
-        case .trending:
-            return .get
-        }
-    }
-    
-    var sampleData: Data {
-        Data()
-    }
-    
-    var task: Task {
-        switch self {
-        case .trending:
-            return .requestParameters(
-                parameters: ["api_key": TMDBAPI.apiKey],
-                encoding: .URLEncoded
-            )
-        }
-    }
-    
-    var headers: [String : String]? {
-        switch self {
-        case .trending:
-            return nil
-        }
-    }
 }

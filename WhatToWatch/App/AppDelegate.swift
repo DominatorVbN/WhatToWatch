@@ -17,9 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // do only pure app launch stuff, not interface stuff
         } else {
             self.window = UIWindow()
-            let navVc = UINavigationController(rootViewController: URLCachePrefrencesVC(preferences: .init()))
-            navVc.navigationBar.prefersLargeTitles = true
-            window?.rootViewController = navVc
+            let tabVC = MainTabBarController()
+            window?.rootViewController = tabVC
             window?.makeKeyAndVisible()
         }
         return true

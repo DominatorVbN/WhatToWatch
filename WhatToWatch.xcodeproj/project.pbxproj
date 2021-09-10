@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		286A32A326E4B179004CA1B0 /* NSCachePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286A32A226E4B178004CA1B0 /* NSCachePreferences.swift */; };
 		28718291266B96A400569A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28718290266B96A400569A74 /* AppDelegate.swift */; };
 		28718293266B96A400569A74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28718292266B96A400569A74 /* SceneDelegate.swift */; };
 		28718295266B96A400569A74 /* URLCacheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28718294266B96A400569A74 /* URLCacheVC.swift */; };
@@ -18,12 +19,23 @@
 		287182AD266BA11B00569A74 /* URLCachePrefrencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287182AC266BA11B00569A74 /* URLCachePrefrencesVC.swift */; };
 		287182AF266BA44100569A74 /* UISwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287182AE266BA44100569A74 /* UISwitchCell.swift */; };
 		28817205266BFFB7008C915C /* PaginatedTrendingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28817204266BFFB7008C915C /* PaginatedTrendingResponse.swift */; };
+		289070B126EBF91400916266 /* NSCachePrefrencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289070B026EBF91300916266 /* NSCachePrefrencesVC.swift */; };
+		289070B526EBFD3C00916266 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289070B426EBFD3C00916266 /* MainTabBarController.swift */; };
 		28C80122266CF5750022A05F /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C80121266CF5750022A05F /* ResultCell.swift */; };
 		28C8CA46266BAB6F0005C719 /* UISegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CA45266BAB6F0005C719 /* UISegmentedControlCell.swift */; };
 		28C8CA48266BD2760005C719 /* URLRequest.CachePolicy+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CA47266BD2760005C719 /* URLRequest.CachePolicy+.swift */; };
+		28D5293326E355270068CD7B /* URLCacheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5293226E355270068CD7B /* URLCacheViewModel.swift */; };
+		28D5293626E3638E0068CD7B /* URLCachePrefrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5293526E3638E0068CD7B /* URLCachePrefrences.swift */; };
+		28D5293A26E365F60068CD7B /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5293926E365F60068CD7B /* UIImageView+.swift */; };
+		28D5293C26E368D00068CD7B /* TextDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5293B26E368D00068CD7B /* TextDetailVC.swift */; };
+		28D5293F26E36D700068CD7B /* TMDBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5293E26E36D700068CD7B /* TMDBProvider.swift */; };
+		28D5294126E379610068CD7B /* ResultListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5294026E379610068CD7B /* ResultListVC.swift */; };
+		28D5294326E379850068CD7B /* ResultListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5294226E379850068CD7B /* ResultListProvider.swift */; };
+		28D5294526E382640068CD7B /* NSCacheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5294426E382640068CD7B /* NSCacheVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		286A32A226E4B178004CA1B0 /* NSCachePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCachePreferences.swift; sourceTree = "<group>"; };
 		2871828D266B96A400569A74 /* WhatToWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28718290266B96A400569A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28718292266B96A400569A74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +49,19 @@
 		287182AC266BA11B00569A74 /* URLCachePrefrencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCachePrefrencesVC.swift; sourceTree = "<group>"; };
 		287182AE266BA44100569A74 /* UISwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchCell.swift; sourceTree = "<group>"; };
 		28817204266BFFB7008C915C /* PaginatedTrendingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedTrendingResponse.swift; sourceTree = "<group>"; };
+		289070B026EBF91300916266 /* NSCachePrefrencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCachePrefrencesVC.swift; sourceTree = "<group>"; };
+		289070B426EBFD3C00916266 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		28C80121266CF5750022A05F /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		28C8CA45266BAB6F0005C719 /* UISegmentedControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlCell.swift; sourceTree = "<group>"; };
 		28C8CA47266BD2760005C719 /* URLRequest.CachePolicy+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest.CachePolicy+.swift"; sourceTree = "<group>"; };
+		28D5293226E355270068CD7B /* URLCacheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCacheViewModel.swift; sourceTree = "<group>"; };
+		28D5293526E3638E0068CD7B /* URLCachePrefrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCachePrefrences.swift; sourceTree = "<group>"; };
+		28D5293926E365F60068CD7B /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		28D5293B26E368D00068CD7B /* TextDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailVC.swift; sourceTree = "<group>"; };
+		28D5293E26E36D700068CD7B /* TMDBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBProvider.swift; sourceTree = "<group>"; };
+		28D5294026E379610068CD7B /* ResultListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListVC.swift; sourceTree = "<group>"; };
+		28D5294226E379850068CD7B /* ResultListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListProvider.swift; sourceTree = "<group>"; };
+		28D5294426E382640068CD7B /* NSCacheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,23 +95,98 @@
 		2871828F266B96A400569A74 /* WhatToWatch */ = {
 			isa = PBXGroup;
 			children = (
+				28D5293D26E36D5B0068CD7B /* API + Caching */,
+				28D5293826E365D10068CD7B /* App */,
+				28D5293726E365B10068CD7B /* Extensions */,
+				28D5293426E363800068CD7B /* Models */,
+				28D5292F26E354AA0068CD7B /* Viewmodels */,
+				28D5292E26E354980068CD7B /* Views */,
 				287182A4266B96B200569A74 /* WhatToWatch.entitlements */,
-				28718290266B96A400569A74 /* AppDelegate.swift */,
-				28718292266B96A400569A74 /* SceneDelegate.swift */,
-				28718294266B96A400569A74 /* URLCacheVC.swift */,
 				28718299266B96A800569A74 /* Assets.xcassets */,
 				2871829B266B96A800569A74 /* LaunchScreen.storyboard */,
 				2871829E266B96A800569A74 /* Info.plist */,
-				287182A8266B98D000569A74 /* TMDBAPI.swift */,
-				287182AA266B98F200569A74 /* Cache.swift */,
-				287182AC266BA11B00569A74 /* URLCachePrefrencesVC.swift */,
-				287182AE266BA44100569A74 /* UISwitchCell.swift */,
-				28C8CA45266BAB6F0005C719 /* UISegmentedControlCell.swift */,
-				28C8CA47266BD2760005C719 /* URLRequest.CachePolicy+.swift */,
-				28817204266BFFB7008C915C /* PaginatedTrendingResponse.swift */,
-				28C80121266CF5750022A05F /* ResultCell.swift */,
 			);
 			path = WhatToWatch;
+			sourceTree = "<group>";
+		};
+		289070B226EBF96100916266 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				287182AE266BA44100569A74 /* UISwitchCell.swift */,
+				28C80121266CF5750022A05F /* ResultCell.swift */,
+				28C8CA45266BAB6F0005C719 /* UISegmentedControlCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		289070B326EBF9D000916266 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D5294026E379610068CD7B /* ResultListVC.swift */,
+				28718294266B96A400569A74 /* URLCacheVC.swift */,
+				28D5294426E382640068CD7B /* NSCacheVC.swift */,
+				287182AC266BA11B00569A74 /* URLCachePrefrencesVC.swift */,
+				289070B026EBF91300916266 /* NSCachePrefrencesVC.swift */,
+				28D5293B26E368D00068CD7B /* TextDetailVC.swift */,
+				289070B426EBFD3C00916266 /* MainTabBarController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		28D5292E26E354980068CD7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				289070B326EBF9D000916266 /* View controllers */,
+				289070B226EBF96100916266 /* Table View Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28D5292F26E354AA0068CD7B /* Viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				28D5293226E355270068CD7B /* URLCacheViewModel.swift */,
+				28D5294226E379850068CD7B /* ResultListProvider.swift */,
+			);
+			path = Viewmodels;
+			sourceTree = "<group>";
+		};
+		28D5293426E363800068CD7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28D5293526E3638E0068CD7B /* URLCachePrefrences.swift */,
+				28817204266BFFB7008C915C /* PaginatedTrendingResponse.swift */,
+				286A32A226E4B178004CA1B0 /* NSCachePreferences.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28D5293726E365B10068CD7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28C8CA47266BD2760005C719 /* URLRequest.CachePolicy+.swift */,
+				28D5293926E365F60068CD7B /* UIImageView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		28D5293826E365D10068CD7B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				28718290266B96A400569A74 /* AppDelegate.swift */,
+				28718292266B96A400569A74 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		28D5293D26E36D5B0068CD7B /* API + Caching */ = {
+			isa = PBXGroup;
+			children = (
+				287182A8266B98D000569A74 /* TMDBAPI.swift */,
+				28D5293E26E36D700068CD7B /* TMDBProvider.swift */,
+				287182AA266B98F200569A74 /* Cache.swift */,
+			);
+			path = "API + Caching";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,15 +266,26 @@
 			files = (
 				28C8CA48266BD2760005C719 /* URLRequest.CachePolicy+.swift in Sources */,
 				28718295266B96A400569A74 /* URLCacheVC.swift in Sources */,
+				289070B526EBFD3C00916266 /* MainTabBarController.swift in Sources */,
+				28D5293A26E365F60068CD7B /* UIImageView+.swift in Sources */,
 				287182AB266B98F200569A74 /* Cache.swift in Sources */,
 				28C8CA46266BAB6F0005C719 /* UISegmentedControlCell.swift in Sources */,
+				28D5293626E3638E0068CD7B /* URLCachePrefrences.swift in Sources */,
 				28C80122266CF5750022A05F /* ResultCell.swift in Sources */,
+				28D5294326E379850068CD7B /* ResultListProvider.swift in Sources */,
 				287182AD266BA11B00569A74 /* URLCachePrefrencesVC.swift in Sources */,
+				289070B126EBF91400916266 /* NSCachePrefrencesVC.swift in Sources */,
+				28D5294526E382640068CD7B /* NSCacheVC.swift in Sources */,
+				28D5294126E379610068CD7B /* ResultListVC.swift in Sources */,
 				28817205266BFFB7008C915C /* PaginatedTrendingResponse.swift in Sources */,
 				287182A9266B98D000569A74 /* TMDBAPI.swift in Sources */,
+				28D5293C26E368D00068CD7B /* TextDetailVC.swift in Sources */,
 				28718291266B96A400569A74 /* AppDelegate.swift in Sources */,
+				28D5293326E355270068CD7B /* URLCacheViewModel.swift in Sources */,
 				28718293266B96A400569A74 /* SceneDelegate.swift in Sources */,
 				287182AF266BA44100569A74 /* UISwitchCell.swift in Sources */,
+				286A32A326E4B179004CA1B0 /* NSCachePreferences.swift in Sources */,
+				28D5293F26E36D700068CD7B /* TMDBProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +437,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -351,7 +459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

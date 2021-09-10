@@ -45,7 +45,7 @@ struct TMDBResult: Codable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)
-        let posterPath = try container.decode(String.self, forKey: .posterPath)
+        let posterPath = try container.decodeIfPresent(String.self, forKey: .posterPath) ?? ""
         self.posterPath = posterPath
         self.title = try (container.decodeIfPresent(String.self, forKey: .title)) ?? ( container.decodeIfPresent(String.self, forKey: .name))
         let imageURLString = "https://image.tmdb.org/t/p/w200\(posterPath)"
